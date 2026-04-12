@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 import time, random
+from prometheus_flask_exporter import PrometheusMetrics   # ← This line must be 
 
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)  # ← This one line adds /metrics endpoint
