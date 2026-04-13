@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: order-api
-          image: gk740/order-api:de052b7f68695ab7665299431250b999c6a7182b
+          image: gk740/order-api:latest
           ports:
             - containerPort: 5000
           resources:
